@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logOut"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="150dp"
+        android:layout_alignParentRight="true"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signOut"
+        android:ems="5"
+        android:hint="Add a comment"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UploadPicture"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#A8009688"/>
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_toEndOf="@id/pic"
+        android:text="@string/Submit"
+        android:backgroundTint="#811C38D6"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/post"
+        android:layout_centerHorizontal="true"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

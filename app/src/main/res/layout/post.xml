@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_margin="30dp">
+
+    <TextView
+    android:id="@+id/user"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    tool:text = "FakeName"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        tool:srcCompat="@tools:sample/avatars"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/image"
+        android:layout_marginBottom="10dp"
+        tool:text = "aaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/description"/>
+
+
+</RelativeLayout>
